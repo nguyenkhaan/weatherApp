@@ -1,0 +1,169 @@
+:root {
+    --background-img: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    --background-img-hot: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    --background-img-cold: url(https://images.unsplash.com/photo-1505322022379-7c3353ee6291?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    --background-img-fall: url(https://images.unsplash.com/photo-1477088139840-0f0a9cb47cce?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    --background-img-verycold: url(https://images.unsplash.com/photo-1520234857033-917be5257246?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    --white-color: #fff; 
+    --text-color: #7D7C7C; 
+    --shadow-color: #727D73; 
+}
+* {
+    box-sizing: border-box;
+}
+html 
+{
+    font-size: 62.5%; 
+    line-height: 1.6rem;
+    width: 100%; 
+    height: 100%; 
+    font-family: sans-serif;
+}
+body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.app {
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) , rgba(0,0,0,0.6), rgba(0,0,0,0.3)), var(--background-img-hot); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.weather {
+    width: 25%; 
+    height: 85%; 
+    background-image: var(--background-img-hot); 
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 7px;
+    padding: 25px 14px; 
+    box-shadow: 0px 0px 4px var(--white-color);
+}
+.header {
+    width: 100%; 
+    height: 30%; 
+    padding: 10px 0; 
+}
+.input-wrap {
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.header__input {
+    width: calc(100% - 8px); 
+    height: 32px; 
+    font-size: 1.5rem;  
+    border: none; 
+    border-top-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    padding: 10px; 
+    box-shadow: 1px 1px 0.5px var(--shadow-color); 
+    color: var(--text-color); 
+    font-weight: 420;
+}
+.header__capital {
+    width: 100%; 
+    text-align: center; 
+    font-size: 3.3rem; 
+    color: var(--white-color); 
+    padding: 0;  
+    margin: 0; 
+    padding-top: 50px; 
+    text-shadow: 3px 3px 3px var(--shadow-color);
+    line-height: 3.2rem; 
+}
+.header__date-time {
+    text-align: center; 
+    display: block;  
+    margin: 0; 
+    margin-top: 22px; 
+    color: var(--white-color); 
+    font-size: 1.7rem; 
+    font-weight: 550;
+}
+.main-body {
+    margin-top: 0px; 
+    width: 100%; 
+    height: 40%; 
+    display: flex;
+}
+.main-body__temp {
+    background-color: rgba(255, 255, 255, 0.4); 
+    height: 70%; 
+    width: 68%; 
+    margin: auto; 
+    border-radius: 12px;
+    display: flex; 
+}
+.temp {
+    margin: auto; 
+    font-size: 7.4rem; 
+    font-weight: 800;
+    opacity: 1;
+    color: var(--white-color); 
+    z-index: 2; 
+    text-shadow: 5px 5px 5px var(--shadow-color); 
+    padding: 10px; 
+}
+.footer {
+    width: 100%; 
+    height: 30%; 
+}
+.footer__weather-list {
+    padding-left: 0;  
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-between;
+    padding: 8px 12px; 
+}
+.footer__weather-list-item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem; 
+    font-weight: 520; 
+    color: var(--white-color); 
+}
+.list-item-icon { 
+    margin-bottom: 16px; 
+}
+
+.weather-list-item-info {
+
+}
+/*-------------------------------------------------CLASS BO SUNG------------------------------------------------------------------*/ 
+.app.background--hot {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) , rgba(0,0,0,0.6), rgba(0,0,0,0.3)), var(--background-img-hot); 
+}
+.background--hot .weather {
+    background-image: var(--background-img-hot); 
+}
+
+.app.background--fall {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) , rgba(0,0,0,0.6), rgba(0,0,0,0.3)), var(--background-img-fall); 
+}
+.background--fall .weather {
+    background-image: var(--background-img-fall); 
+}
+
+.app.background--cold {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) , rgba(0,0,0,0.6), rgba(0,0,0,0.3)), var(--background-img-cold); 
+}
+.background--cold .weather {
+    background-image: var(--background-img-cold); 
+}
+
+.app.background--verycold {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) , rgba(0,0,0,0.6), rgba(0,0,0,0.3)), var(--background-img-verycold); 
+}
+.background--verycold .weather {
+    background-image: var(--background-img-verycold); 
+}
