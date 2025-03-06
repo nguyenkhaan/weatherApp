@@ -131,7 +131,8 @@ function main()
 {
     const input = document.querySelector('.header__input'); 
     input.addEventListener('keydown', function(e) {
-        if (e.code === 'Enter') {
+        if (e.keyCode === 13) {
+            alert('Xin chao'); 
             const v = input.value.trim(); 
             changeUI(v); 
         }
