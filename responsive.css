@@ -1,4 +1,4 @@
-@media only screen and (min-width: 100em) and (max-width: 2496px)
+@media only screen and (min-width: 1600px)
 {
     .weather {
         width: 550px; 
@@ -23,28 +23,28 @@
         padding: 12px 12px; 
     }
 } 
-@media only screen and (min-width: 48em) and (max-width: 99.9375em) 
+@media only screen and (min-width: 800px) and (max-width: 1024px) 
 {
     .weather {
-        width: 650px; 
-        height: 800px; 
+        width: 450px; 
+        height: 650px; 
     }
     .header__input {
-        height: 42px; 
-        font-size: 1.7rem; 
+        height: 36px; 
+        font-size: 1.5rem; 
     }
     .header__capital {
-        font-size: 4.8rem; 
+        font-size: 4rem; 
     }
     .header__date-time {
-        font-size: 2.5rem; 
+        font-size: 2rem; 
         margin-top: 32px; 
     }
     .temp {
-        font-size: 8.8rem; 
+        font-size: 8rem; 
     }
     .footer__weather-list-item {
-        font-size: 2.4rem; 
+        font-size: 2rem; 
         padding: 12px 12px; 
     }
 }
@@ -62,7 +62,7 @@
         font-size: 4rem; 
     }
     .header__date-time {
-        font-size: 2.2rem; 
+        font-size: 2rem; 
         margin-top: 28px; 
     }
     .main-body__temp {
@@ -72,7 +72,7 @@
         font-size: 7.5rem; 
     }
     .footer__weather-list-item {
-        font-size: 2rem; 
+        font-size: 1.6rem; 
         padding: 8px 8px; 
     }
 }
