@@ -130,7 +130,7 @@ function changeUI(cityName)
 function main() 
 {
     const input = document.querySelector('.header__input'); 
-    input.addEventListener('keypress', function(e) {
+    input.addEventListener('keydown', function(e) {
         if (e.code === 'Enter') {
             const v = input.value.trim(); 
             changeUI(v); 
