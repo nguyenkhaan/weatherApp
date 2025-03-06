@@ -1,0 +1,78 @@
+@media only screen and (min-width: 100em) and (max-width: 2496px)
+{
+    .weather {
+        width: 550px; 
+        height: 800px; 
+    }
+    .header__input{
+        height: 40px; 
+        font-size: 1.7rem; 
+    }
+    .header__capital {
+        font-size: 4.5rem; 
+    }
+    .header__date-time {
+        font-size: 2.1rem; 
+        margin-top: 24px; 
+    }
+    .temp {
+        font-size: 8.2rem; 
+    }
+    .footer__weather-list-item {
+        font-size: 2rem; 
+        padding: 12px 12px; 
+    }
+} 
+@media only screen and (min-width: 48em) and (max-width: 99.9375em) 
+{
+    .weather {
+        width: 650px; 
+        height: 800px; 
+    }
+    .header__input {
+        height: 42px; 
+        font-size: 1.7rem; 
+    }
+    .header__capital {
+        font-size: 4.8rem; 
+    }
+    .header__date-time {
+        font-size: 2.5rem; 
+        margin-top: 32px; 
+    }
+    .temp {
+        font-size: 8.8rem; 
+    }
+    .footer__weather-list-item {
+        font-size: 2.4rem; 
+        padding: 12px 12px; 
+    }
+}
+@media only screen and (max-width: 47.9375em) 
+{
+    .weather {
+        width: 100%; 
+        height: 100%; 
+    }
+    .header__input {
+        height: 30px; 
+        font-size: 1.6rem; 
+    }
+    .header__capital {
+        font-size: 4rem; 
+    }
+    .header__date-time {
+        font-size: 2.2rem; 
+        margin-top: 28px; 
+    }
+    .main-body__temp {
+        width: 300px; 
+    }
+    .temp {
+        font-size: 7.5rem; 
+    }
+    .footer__weather-list-item {
+        font-size: 2rem; 
+        padding: 8px 8px; 
+    }
+}
