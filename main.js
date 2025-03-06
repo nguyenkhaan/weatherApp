@@ -137,4 +137,14 @@ function main()
         }
     })
 }
+const initialHeight = window.innerHeight;
+
+window.addEventListener("resize", () => {
+    if (window.innerHeight < initialHeight * 0.7) {
+        document.body.classList.add("keyboard-open"); // Bàn phím xuất hiện
+    } else {
+        document.body.classList.remove("keyboard-open"); // Bàn phím đóng
+    }
+});
+
 main(); 

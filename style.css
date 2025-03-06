@@ -167,3 +167,6 @@ body {
 .background--verycold .weather {
     background-image: var(--background-img-verycold); 
 }
+.keyboard-open {
+    padding-bottom: 50px; /* Điều chỉnh khoảng trống nếu cần */
+}
